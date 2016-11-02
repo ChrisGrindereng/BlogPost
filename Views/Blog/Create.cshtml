@@ -1,0 +1,18 @@
+@model Post
+<h3>Create an awesome post</h3>
+
+<hr/>
+
+<div class="post">
+<form asp-controller="Post" asp-action="Create">
+    
+        <p><label asp-for="Title"></label></p>
+        <p><input asp-for="Title"></p>
+    
+    
+        <span><label asp-for="Content"></label></span>
+        <p><textarea asp-for="Content"></textarea></p>
+    
+    <button type="submit">Post</button>
+</form>
+</div>

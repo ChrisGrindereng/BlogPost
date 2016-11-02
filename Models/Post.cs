@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
+
+
 public class Post
 {
     // sometimes, people use Guids
@@ -15,7 +17,12 @@ public class Post
     public string Title { get; set; }
     public string Content { get; set; }
     // [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
-    public DateTime createdAt { get; set; }
+    public DateTime createdAt { get; set; } = DateTime.Now;
+    // Post constructor creates post ID
+    public Post(){
+        PostId = new Random().Next(1000, 9999);
+    }
+
     // public Blog Blog { get; set; }
 
     /*
@@ -37,6 +44,7 @@ public class Post
     [DataType(DataType.Time)]	type=”time”
     */
 }
+
 
 /*
 public class User
@@ -60,9 +68,4 @@ public class User
  */
 
 // Models can contain other Models...
-// public class Blog
-// {
-//     public int BlogId { get; set; }
-//     public string Url { get; set; }
-//     public List<Post> Posts { get; set; }
-// }
+

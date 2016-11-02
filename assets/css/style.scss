@@ -1,17 +1,54 @@
-@define-mixin grid_r $col, $width {
-        @media (min-width: $(width)px) {
-                .grid-$(col)-$(width) {
-                    & > * {
-                       width: calc(100 / $col)%;
-                }
-            }
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.grid {
+    
+    font-size: 0;
+    & > * {
+        display: inline-block;
+        font-size: medium;
+    }
+    &:after {
+        content:"";
+        display: inline-block;
+        width: 100%;
     }
 }
-@mixin grid_r 2, 400;
-@mixin grid_r 3, 600;
-@mixin grid_r 4, 800;
-@mixin grid_r 6, 1000;
+
+
+
 
 body {
-    color: red;
+    color: purple;
+    
+    background-image: url(http://insanityflows.net/wp-content/uploads/2016/10/scary-halloween-wallpaper1.jpg);
+    height: 100%;
+    width: 100%;
+}
+
+.tag{
+    
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+.post{
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 5px .5rem rgba(50,10,0,.5);
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+
+}
+.edit{
+    display: inline-block;
+    
+}
+.delete{
+    display: inline-block;
+    
+   
 }

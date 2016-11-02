@@ -1,0 +1,19 @@
+@model Post
+
+<h3>Edit post:</h3>
+
+<hr/>
+<div class="post">
+<form asp-controller="Post" asp-action="Upsert">
+
+        <p><label asp-for="Title"></label></p>
+        <p><input asp-for="Title"/></p>
+    
+
+
+        <p><label asp-for="Content"></label></p>
+        <p><textarea asp-for="Content"/>@Model.Content</textarea></p>
+
+    <button type="submit">Post</button>
+</form>
+</div>

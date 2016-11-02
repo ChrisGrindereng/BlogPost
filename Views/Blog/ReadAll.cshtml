@@ -1,0 +1,20 @@
+@model Blog
+
+<h1><a href="/">Hello From My Holloween Blog!</a></h1>
+
+<p>Want to add a <a href="/posts/new">Post</a>?</p>
+<hr>
+
+<div class="posts">
+    @foreach(var post in @Model.getRecent()){
+        @Html.Partial("ReadOne", post)
+    }
+
+</div>
+
+<hr>
+
+
+
+
+

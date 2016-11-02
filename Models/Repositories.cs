@@ -17,6 +17,16 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Concurrent;
 
+public interface IBlogPost {
+void create(Post p);
+IEnumerable<Post> getAll();
+IEnumerable<Post> getRecent(int numberOfrecords);
+Post get(int postid);
+Post update(int id, Post p);
+void delete(int id);
+
+}
+
 public interface IRepository<T>
 {
     void Create(T item);

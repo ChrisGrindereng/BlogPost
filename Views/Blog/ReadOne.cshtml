@@ -1,0 +1,22 @@
+@model Post
+
+<div class="post">
+    <p> @Model.Title......@Model.createdAt</p>
+    <p> @Model.Content <p>
+    
+    <div class="edit">
+        <form
+            method="put"
+            action="/posts/@(Model.PostId)/edit">
+                <button type="submit">Edit</button>
+        </form>
+    </div>
+    <div class="delete">
+        <form
+            method="post"
+            action="/posts/@(Model.PostId)/delete">
+                <button type="submit">Delete</button>
+        </form>
+    </div>
+    
+</div>
