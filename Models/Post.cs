@@ -23,7 +23,7 @@ public class Post
         PostId = new Random().Next(1000, 9999);
     }
 
-    // public Blog Blog { get; set; }
+    
 
     /*
     other attributes

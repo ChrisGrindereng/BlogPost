@@ -11,12 +11,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 
 public class Blog : IBlogPost
 {
-    //public string Url { get; set; }
+    
     public int BlogId { get; set; }
     
     public string title { get; set;}
     public List<Post> Posts { get; set; } = new List<Post>();
     public Blog(){
+       //Add Dumby data  
        Posts.Add(new Post {PostId = 1001, Title = "Pirates", Content = "Lets post some stuff about Pirates" });
        Posts.Add(new Post {PostId = 1002, Title = "Witches", Content = "Lets post some stuff about Witches" });
        Posts.Add(new Post {PostId = 1003, Title = "Knights", Content = "Lets post some stuff about Knights" });

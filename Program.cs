@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 
+
 public class Program
 {
     public static void Main(string[] args)
@@ -16,6 +17,7 @@ public class Program
                 .AddEnvironmentVariables(prefix: "ASPNETCORE_")
                 .Build();
         
+        //run these files in the main build
         var host = new WebHostBuilder()
             .UseKestrel()
             .UseWebRoot("assets")

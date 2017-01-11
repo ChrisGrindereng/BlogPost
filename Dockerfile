@@ -11,3 +11,5 @@ EXPOSE 5000/tcp
 ENV ASPNETCORE_URLS http://*:5000
 
 CMD ["dotnet", "run"]
+
+# designates build 
