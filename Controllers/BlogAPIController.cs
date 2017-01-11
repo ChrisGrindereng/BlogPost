@@ -25,8 +25,6 @@ public class BlogAPIController : Controller {
         return Ok(blogpost.get(id));
     }
 
-    
-
     [HttpPost]
     public IActionResult Create([FromBody]Post p){
         blogpost.create(p);
@@ -46,5 +44,4 @@ public class BlogAPIController : Controller {
         }
         return Ok();
     }
-
 }

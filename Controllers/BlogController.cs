@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 
 
-[Route("/posts")]
+[Route("/posts")] 
 public class BlogController : Controller {
     private IBlogPost blog;
     public BlogController(IBlogPost b){
