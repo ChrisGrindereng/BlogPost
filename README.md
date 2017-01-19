@@ -1,6 +1,6 @@
 #Blog Post 
 - A dotnet core web application built as a holiday themed blog with full C.R.U.D funtionality built in.
-- Users my post up new blog posts, edit existing posts, veiw the most recent posts, and delete posts.
+- Users may post up new blog posts, edit existing posts, veiw the most recent posts, and delete posts.
 - The application uses a MVC style with an in memory database. 
 - Build of of the .NET Core Boilerplate of which you can learn more about below.
 
