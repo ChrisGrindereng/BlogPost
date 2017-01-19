@@ -1,8 +1,8 @@
 #Blog Post 
--a dotnet core web application built as a holiday themed blog with full C.R.U.D funtionality built in.
--users my post up new blog posts, edit existing posts, veiw the most recent posts, and delete posts.
--the application uses a MVC style with an in memory database. 
--build of of the .NET Core Boilerplate of which you can learn more about below
+- a dotnet core web application built as a holiday themed blog with full C.R.U.D funtionality built in.
+- users my post up new blog posts, edit existing posts, veiw the most recent posts, and delete posts.
+- the application uses a MVC style with an in memory database. 
+- build of of the .NET Core Boilerplate of which you can learn more about below.
 
 # .NET Core Boilerplate
 
