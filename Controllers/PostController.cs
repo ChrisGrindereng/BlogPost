@@ -77,6 +77,7 @@ public class PostController : Controller
         db.Posts.Remove(p);
         return new NoContentResult(); // sends back a 204 Ok. (no content to be sent back to client)
     }
+}
 
 
 
@@ -208,7 +209,7 @@ DELETE /api/todo/{id}	Delete an item.	        None	                None
 
 */
 
-[Route("/api/[controller]")] // grabs "Post" from the controller name
+//[Route("/api/[controller]")] // grabs "Post" from the controller name
 // can also just do [Route("/api/posts")]
 // additionally, can have /api/[controller]/[action]
 
@@ -233,4 +234,4 @@ DELETE /api/todo/{id}	Delete an item.	        None	                None
         Example: return RedirectToAction("Complete", new {id = 123});
 
     **/
-}
+//}
