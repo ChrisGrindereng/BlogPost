@@ -12,7 +12,7 @@ The main problem that had to be solved with this being one of the first MVC appl
 The other major issue I faced was in the deployment of the server to now.sh after the application was complete. This required troubleshooting the package.JSON file and checking versioning of my dependencies. The problem turned out to be a versioning error with npm for dot.net core. Since dot.net core is the open stack side of ASP.NET and as such I was using a version of npm not compatible with my windows environment. 
 
 ###Error handling/Troubleshooting:
-Much of the error handling for this program was handled with the use of Swagger.ui, a nuget package that provides an interface for testing Crud functions and model binding by allowing you to iniate a Get or Post request by sending up or receiving JSON from the backend of your application.  The Swagger page can be accessed through the URL by adding the URI segment /swagger.ui.
+Much of the error handling for this program was handled with the use of Swagger.ui, a nuget package that provides an interface for testing Crud functions and model binding by allowing you to iniate a Get or Post request by sending up or receiving JSON from the backend of your application.  The Swagger page can be accessed by adding the URI segment /swagger/ui to the URL when running the locally. 
 
 
 ###MVP(Minimum Viable Product) and Stretch Goals: 
