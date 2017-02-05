@@ -5,29 +5,29 @@ Link to live page: https://holloween-blog.now.sh/
 - A dotnet core web application built as a holiday themed blog with full C.R.U.D funtionality.
 - Users may post up new blog posts, edit existing posts, veiw the most recent posts, and delete posts.
 - The application uses a MVC format with an in memory database. 
-- Built on the .NET Core Boilerplate which you can learn more about below under .NET Core Boilerplate.
-
+- Built on the .NET Core Boilerplate which you can learn more about below.
 <img src="./Screenshots/ScreenshotBlogPost.png"/>
 
-###Challenges faced & Solutions used: 
-The main problem that had to be solved with this being one of the first MVC applications I built was dependency injection to link the models and controllers. To accomplish this I used a repository interface to provide the CRUD functionality to the controllers and bound the models in the DB.cs file using a override function. 
+###Challenges Faced and Solutions Used: 
+The main problem I encountered due to this being one of the first MVC applications I built was using dependency injection to link the models and controllers. To accomplish this, I used a repository interface to provide the CRUD functionality to the controllers and bound the models in the DB.cs file using a override function. 
 
-<img src="./Screenshots/BlogPost_interface.png"/>
+<img src="./Screenshots/BlogPost_Interface.png"/>
 
 <img src="./Screenshots/BlogPost_ModelBinding.png"/>
 
-The other major issue I faced was in the deployment of the server to now.sh after the application was complete. This required troubleshooting the package.JSON file and checking versioning of my dependencies. The problem turned out to be a versioning error with npm for dot.net core. Since dot.net core is the open stack side of ASP.NET, the of version of npm in the boilerplate turned out to be for Linux and not compatible with my windows environment. This was pretty easy to fix once I was able to track down the issue. 
+The other major issue I faced was in the deployment of the server to now.sh after the application was complete. This required troubleshooting the package.JSON file and checking versioning of the dependencies. The problem turned out to be a versioning error with npm for dot.net core. Since dot.net core is the open stack side of ASP.NET, the version of npm in the boilerplate turned out to be for Linux and not compatible with a Windows environment. This was pretty easy to fix once I was able to identify the issue. 
 
 <img src="./Screenshots/BlogPost_dependencies.png"/>
 
-###Error handling/Troubleshooting:
-Much of the error handling for this program was handled with the use of Swagger.ui, a nuget package that provides an interface for testing CRUD functions and model binding by allowing you to iniate a Get or Post request by sending up or receiving JSON from the backend of your application. 
+###Error Handling and Troubleshooting:
+Much of the error handling for this program was done with the use of Swagger.ui, a nuget package that provides an interface for testing CRUD functions and model binding. It allows initiating a Get or Post request sending up or receiving JSON from the backend of your application. 
 
 <img src="./Screenshots/BlogPost_swagger.png"/>
 
 ###MVP(Minimum Viable Product) and Stretch Goals: 
-- A user must be able to visit the site and view a message board of blogposts. 
-- The user will have the ability to create new posts as well as delete or edit existing posts. 
+###MVP
+- Ability to visit the site and view a message board of blogposts. 
+- Ability to create new posts as well as delete or edit existing posts. 
 
 ###Stretch Goals
 - All posts will be timestamped and displayed in order from the most recent. 
@@ -35,7 +35,7 @@ Much of the error handling for this program was handled with the use of Swagger.
 
 ###Contribution we'd like to be added:
 - Add user logins.
-- Creating multiple chat rooms to post different blogs. 
+- Create multiple chat rooms to post different blogs. 
 
 
 
