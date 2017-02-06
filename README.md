@@ -6,7 +6,7 @@ Link to live page: https://holloween-blog.now.sh/
 - Users may post up new blog posts, edit existing posts, veiw the most recent posts, and delete posts.
 - The application uses a MVC format with an in memory database. 
 - Built on the .NET Core Boilerplate which you can learn more about below.
-<img src="./Screenshots/ScreenshotBlogPost.png"/>
+<img src="./Screenshots/BlogPost_blog.png"/>
 
 ###Challenges Faced and Solutions Used: 
 The main problem I encountered due to this being one of the first MVC applications I built was using dependency injection to link the models and controllers. To accomplish this, I used a repository interface to provide the CRUD functionality to the controllers and bound the models in the DB.cs file using a override function. 
