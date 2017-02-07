@@ -1,5 +1,5 @@
 #Blog Post 
-Link to live page: 
+Link to live page: https://halloween.now.sh
 
 ###Overveiw
 - A dotnet core web application built as a holiday themed blog with full C.R.U.D funtionality.
