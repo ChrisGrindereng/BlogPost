@@ -1,12 +1,12 @@
 #Blog Post 
-Link to live page: https://holloween-blog.now.sh/
+Link to live page: 
 
 ###Overveiw
 - A dotnet core web application built as a holiday themed blog with full C.R.U.D funtionality.
 - Users may post up new blog posts, edit existing posts, veiw the most recent posts, and delete posts.
 - The application uses a MVC format with an in memory database. 
 - Built on the .NET Core Boilerplate which you can learn more about below.
-<img src="./Screenshots/BlogPost_blog.png"/>
+<img src="./Screenshots/HomeScreen.png"/>
 
 ###Challenges Faced and Solutions Used: 
 The main problem I encountered due to this being one of the first MVC applications I built was using dependency injection to link the models and controllers. To accomplish this, I used a repository interface to provide the CRUD functionality to the controllers and bound the models in the DB.cs file using a override function. 
