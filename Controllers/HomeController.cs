@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 public class HomeController : Controller
 {
     [HttpGet]
-    public IActionResult Root(){
+    public IActionResult Index(){
         return View();
     }
 

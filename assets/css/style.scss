@@ -16,15 +16,70 @@
     }
 }
 
+// nabigation bar
 
+.navbar {
+  position: relative;
+  z-index: 1000;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
 
+.navbar:before,
+.navbar:after {
+  display: table;
+  content: " ";
+}
+
+.navbar:after {
+  clear: both;
+}
+
+.navbar:before,
+.navbar:after {
+  display: table;
+  content: " ";
+}
+
+.navbar:after {
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+
+.navbar-header:before,
+.navbar-header:after {
+  display: table;
+  content: " ";
+}
+
+.navbar-header:after {
+  clear: both;
+}
+
+.navbar-header:before,
+.navbar-header:after {
+  display: table;
+  content: " ";
+}
+
+.navbar-header:after {
+  clear: both;
+}
+
+//body
 
 body {
-    color: purple;
-    
-    background-image: url(http://insanityflows.net/wp-content/uploads/2016/10/scary-halloween-wallpaper1.jpg);
+
+    background-image: url(http://img15.deviantart.net/8ce1/i/2005/258/c/9/paper_texture_v4_by_bashcorpo.jpg);
     height: 100%;
     width: 100%;
+    font-family: Brush Script MT;
 }
 
 .tag{
@@ -39,9 +94,7 @@ body {
     box-shadow: 0 5px .5rem rgba(50,10,0,.5);
     padding: 10px;
     margin: 10px;
-    background-color: black;
-    color: white;
-
+    background-color: lightgray;
 }
 .edit{
     display: inline-block;
@@ -53,4 +106,3 @@ body {
    
 }
 
-.

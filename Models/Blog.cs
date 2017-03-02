@@ -18,16 +18,16 @@ public class Blog : IBlogPost
     public List<Post> Posts { get; set; } = new List<Post>();
     public Blog(){
        //Add Dumby data  
-       Posts.Add(new Post {PostId = 1001, Title = "Pirates", Content = "Lets post some stuff about Pirates" });
-       Posts.Add(new Post {PostId = 1002, Title = "Witches", Content = "Lets post some stuff about Witches" });
-       Posts.Add(new Post {PostId = 1003, Title = "Knights", Content = "Lets post some stuff about Knights" });
-       Posts.Add(new Post {PostId = 1004, Title = "Warewolves", Content = "Lets post some stuff about Warewolves" });
-       Posts.Add(new Post {PostId = 1005, Title = "Vampires", Content = "Lets post some stuff about Vampires" });
-       Posts.Add(new Post {PostId = 1006, Title = "Killer Clowns", Content = "Lets post some stuff about Killer Clowns" });
-       Posts.Add(new Post {PostId = 1007, Title = "Ghosts", Content = "Lets post some stuff about Ghosts" });
-       Posts.Add(new Post {PostId = 1008, Title = "Gules", Content = "Lets post some stuff about Gules" });
-       Posts.Add(new Post {PostId = 1009, Title = "Pumpkins", Content = "Lets post some stuff about Pumpkins" });
-       Posts.Add(new Post {PostId = 1010, Title = "Frakenstien", Content = "Lets post some stuff about Frakenstien" }); 
+       Posts.Add(new Post {PostId = 1001, Title = "", Content = "Lets post some stuff about " });
+       Posts.Add(new Post {PostId = 1002, Title = "", Content = "Lets post some stuff about " });
+       Posts.Add(new Post {PostId = 1003, Title = "", Content = "Lets post some stuff about " });
+       Posts.Add(new Post {PostId = 1004, Title = "", Content = "Lets post some stuff about " });
+       Posts.Add(new Post {PostId = 1005, Title = "", Content = "Lets post some stuff about " });
+       Posts.Add(new Post {PostId = 1006, Title = "", Content = "Lets post some stuff about " });
+       Posts.Add(new Post {PostId = 1007, Title = "", Content = "Lets post some stuff about " });
+       Posts.Add(new Post {PostId = 1008, Title = "", Content = "Lets post some stuff about " });
+       Posts.Add(new Post {PostId = 1009, Title = "", Content = "Lets post some stuff about " });
+       Posts.Add(new Post {PostId = 1010, Title = "", Content = "Lets post some stuff about " }); 
     }
 
     
